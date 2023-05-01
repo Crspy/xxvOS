@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "compare": "c",
+        "time.h": "c",
+        "errno.h": "c",
+        "random": "c",
+        "regs.h": "c",
+        "types.h": "c",
+        "stdint.h": "c",
+        "ports.h": "c",
+        "limits.h": "c",
+        "misc.h": "c",
+        "cpu.h": "c"
+    }
+}

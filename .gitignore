@@ -1,0 +1,6 @@
+/limine
+/ovmf
+*.iso
+*.hdd
+*.log
+*.elf.*
