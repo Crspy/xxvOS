@@ -3,6 +3,7 @@
 
 
 
+
 // Halt and catch fire function.
 void arch_hcf(void)
 {

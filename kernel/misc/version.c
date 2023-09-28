@@ -7,10 +7,7 @@
 /* Kernel name */
 const char * __kernel_name = "xxvOSS";
 
-/* format: major.minor.patch-suffix
- * This really shouldn't change, and if it does,
- * always ensure it still has the correct arguments
- * when used as a *printf() format. */
+/* format: major.minor.patch-suffix */
 const char * __kernel_version_format = "%d.%d.%d-%s";
 
 /* version numbers */
@@ -18,8 +15,7 @@ int    __kernel_version_major = 0;
 int    __kernel_version_minor = 0;
 int    __kernel_version_patch = 0;
 
-/* Kernel build suffix, which doesn't necessarily
- * mean anything, but could be used in the future for attaching git tags */
+/* Kernel build suffix */
 const char * __kernel_version_suffix   = "r";
 
 /* The release codename. */

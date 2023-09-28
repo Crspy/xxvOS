@@ -19,19 +19,19 @@ all-hdd: $(IMAGE_NAME).hdd
 
 .PHONY: run
 run: $(IMAGE_NAME).iso
-	qemu-system-x86_64 -serial mon:stdio -M q35 -m 2G -cdrom $(IMAGE_NAME).iso -boot d -no-reboot -no-shutdown
+	qemu-system-x86_64 -debugcon mon:stdio -M q35 -m 2G -cdrom $(IMAGE_NAME).iso -boot d -no-reboot -no-shutdown
 
 .PHONY: run-uefi
 run-uefi: ovmf $(IMAGE_NAME).iso
-	qemu-system-x86_64 -serial mon:stdio -M q35 -m 2G -bios ovmf/OVMF.fd -cdrom $(IMAGE_NAME).iso -boot d
+	qemu-system-x86_64 -debugcon mon:stdio -M q35 -m 2G -bios ovmf/OVMF.fd -cdrom $(IMAGE_NAME).iso -boot d
 
 .PHONY: run-hdd
 run-hdd: $(IMAGE_NAME).hdd
-	qemu-system-x86_64 -serial mon:stdio -M q35 -m 2G -hda $(IMAGE_NAME).hdd
+	qemu-system-x86_64 -debugcon mon:stdio -M q35 -m 2G -hda $(IMAGE_NAME).hdd
 
 .PHONY: run-hdd-uefi
 run-hdd-uefi: ovmf $(IMAGE_NAME).hdd
-	qemu-system-x86_64 -serial mon:stdio -M q35 -m 2G -bios ovmf/OVMF.fd -hda $(IMAGE_NAME).hdd
+	qemu-system-x86_64 -debugcon mon:stdio -M q35 -m 2G -bios ovmf/OVMF.fd -hda $(IMAGE_NAME).hdd
 
 ovmf:
 	mkdir -p ovmf

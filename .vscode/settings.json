@@ -11,6 +11,12 @@
         "ports.h": "c",
         "limits.h": "c",
         "misc.h": "c",
-        "cpu.h": "c"
+        "cpu.h": "c",
+        "float.h": "c",
+        "stdbool.h": "c",
+        "version.h": "c",
+        "klog.h": "c",
+        "debug_console.h": "c",
+        "cmos.h": "c"
     }
 }

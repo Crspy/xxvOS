@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/kernel",
+                "${workspaceFolder}/sysroot/usr/include"
             ],
             "defines": [],
             "compilerPath": "x86_64-elf-gcc",
